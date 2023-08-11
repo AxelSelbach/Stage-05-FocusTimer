@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --timer-color: hsla(240, 6%, 21%, 1);
+  --controls-color: hsla(240, 6%, 21%, 1);
+  --bg-cards: #02799D;
+  --bg: #FFFFFF;
+  --bg-soundOn: #02799D;
+  --icon-soundOn: #FFFFFF;
+}
+
+body {
+  background-color: var(--bg);
+  min-height: 100vh;
+  display: grid;
+}
+
+.hide {
+  display: none;
+}
+
+.forestSound svg path:nth-child(1),
+.rainingSound svg path:nth-child(1),
+.coffeeShopSound svg path:nth-child(1),
+.fireplaceSound svg path:nth-child(1) {
+  fill: var(--bg-soundOn);
+}
+
+.forestSound svg path:nth-child(2),
+.rainingSound svg path:nth-child(2),
+.coffeeShopSound svg path:nth-child(2),
+.fireplaceSound svg path:nth-child(2) {
+  fill: var(--icon-soundOn);
+}
+
+main {
+  align-self: center;
+  justify-self: center;
+}
+
+.container {
+  display: flex;
+  max-width: 51.25rem;
+  gap: 12rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#timer {
+  display: flex;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7.875rem;
+  line-height: 9.25rem;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--timer-color);
+}
+
+.controls {
+  display: flex;
+  gap: 2.5rem;
+
+  width: clamp(10rem, 10rem + 30vw, 22.8rem);
+  height: clamp(8rem, 5rem + 10vw, 10.8rem);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+aside {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+
+  width: auto;
+  height: auto;
+
+  gap: 2rem;
+  border-radius: 1.5rem;
+}
+
+.forest {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.raining {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.coffeeShop {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.fireplace {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+

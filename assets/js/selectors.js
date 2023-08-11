@@ -1,0 +1,14 @@
+export const forestBtn = document.querySelector('.forest');
+export const rainingBtn = document.querySelector('.raining');
+export const coffeeShopBtn = document.querySelector('.coffeeShop');
+export const fireplaceBtn = document.querySelector('.fireplace');
+export const forestSound = document.querySelector('.forestSound');
+export const rainingSound = document.querySelector('.rainingSound');
+export const coffeeShopSound = document.querySelector('.coffeeShopSound');
+export const fireplaceSound = document.querySelector('.fireplaceSound');
+export const minutesDisplay = document.querySelector('.minutes');
+export const secondsDisplay = document.querySelector('.seconds');
+export const playButton = document.querySelector('.play');
+export const stopButton = document.querySelector('.stop');
+export const increaseButton = document.querySelector('.increase');
+export const decreaseButton = document.querySelector('.decrease');
